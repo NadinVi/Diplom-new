@@ -1,0 +1,22 @@
+@mixin background {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 38px;
+}
+
+@mixin text_link {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@mixin text_link_other {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 16px;
+}
