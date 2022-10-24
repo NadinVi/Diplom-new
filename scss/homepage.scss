@@ -33,6 +33,30 @@ body {
     position: relative;
 }
 
+.info_main::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: -20px;
+    left: 2%;
+    width: 95%;
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.info_main::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    left: 1%;
+    width: 98%;
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+}
+
 .header-container {
     padding-top: 50px;
 }
@@ -296,7 +320,7 @@ body {
 .line {
     background: #CACADB;
     border-radius: 0px 0px 12px 12px;
-    width: 1880px;
+    /*width: 1880px;*/
     height: 10px;
     border: none;
     margin: 0 auto;
@@ -305,7 +329,7 @@ body {
 .line_one {
     background: #E7E7F2;
     border-radius: 0px 0px 12px 12px;
-    width: 1840px;
+    /*width: 1840px;*/
     height: 10px;
     border: none;
     margin: 0 auto;
@@ -313,7 +337,7 @@ body {
 
 .team {
     display: flex;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     background-color: #F5F5FA;
     border-radius: 12px;
     margin: 60px auto 30px auto;
@@ -592,13 +616,15 @@ body {
 .footer_line {
     height: 2px;
     background: $separator_color;
-    margin-bottom: 30px;
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer_text {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .footer_contact {
