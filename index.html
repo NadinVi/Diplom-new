@@ -16,8 +16,9 @@
             <header class="header-container">
                 <div class="log_menu">
                     <div class="header_logo">
-                        <a href="#">
+                        <a class="logo_mobile" href="#">
                             <img class="logo" src="components/svg/Logo_homepage.svg" alt="Logo">
+                            <span class="serv_mobile">services</span>
                         </a>
                     </div>
                     <div class="info_nav">
@@ -54,13 +55,29 @@
                             </ul>
                         </nav>
                     </div>
+                    <div class="mobile_button">
+                        <span class="line_button button_one"></span>
+                        <span class="line_button button_two"></span>
+                        <span class="line_button button_three"></span>
+                    </div>
                 </div>
             </header>
             <main class="main">
                 <div class="txt_btn">
                     <h1 class="h1_name">you legal solutions provider</h1>
                     <a class="btn" href="#">
-                        <svg class="btn_scroll"></svg>
+                        <svg class="btn" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22728_11340)">
+                                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22728_11340">
+                                    <rect width="42" height="42" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </a>
                 </div>
                 <div class="main_experience">
@@ -80,7 +97,8 @@
                     </ul>
                     <div class="experience_text">
                         <h2 class="experience_title">We turn the idea of legal services</h2>
-                        <div class="experience_text">Consolidating many years of experience and practice, the company's
+                        <div class="experience_text_item">Consolidating many years of experience and practice, the
+                            company's
                             lawyers accompany complex projects and achieve a number of important decisions for the
                             industry. Many of them form the practice of applying the law of the sea in Ukraine.
                         </div>
@@ -152,23 +170,22 @@
             </main>
         </div>
     </div>
-    <!-- <hr class="line">
-    <hr class="line_one"> -->
     <div class="fix_container">
-    <div class="team">
-        <img class="photo" src="components/img/image_photo.png" alt="photo Oleksanr Oleksandrovskyi">
-        <div class="team_text">
-            <a class="team_lnk" href="#">Команда
-                <svg class="serv_img"></svg>
-            </a>
-            <h2 class="team_h2">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу,
-                навіть у ситуаціях, коли більшість безсилі.
-            </h2>
-            <p class="name">Олександр Олександровський</p>
-            <p class="job_title">Керуючий партнер</p>
+        <div class="team">
+            <img class="photo" src="components/img/image_photo.png" alt="photo Oleksanr Oleksandrovskyi">
+            <div class="team_text">
+                <a class="team_lnk" href="#">Команда
+                    <svg class="serv_img"></svg>
+                </a>
+                <h2 class="team_h2">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
+                    допомогу,
+                    навіть у ситуаціях, коли більшість безсилі.
+                </h2>
+                <p class="name">Олександр Олександровський</p>
+                <p class="job_title">Керуючий партнер</p>
+            </div>
         </div>
     </div>
-</div>
     <div class="circles">
         <span class="circle_team_active"></span>
         <span class="circle_team"></span>
@@ -296,14 +313,33 @@
         </div>
     </footer>
 
-    <div class="modal_container active_mod">
+    <div class="modal_container">
         <div class="modal">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div class="clouse">
+                <svg class="clouse_btn" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+            </div>
+            <ul class="modal_menu">
+                <li class="modal_input">
+                    <a class="modal_link" href=#>about us</a>
+                </li>
+                <li class="modal_input">
+                    <a class="modal_link" href=#>послуги</a>
+                </li>
+                <li class="modal_input">
+                    <a class="modal_link" href=#>команда</a>
+                </li>
+                <li class="modal_input">
+                    <a class="modal_link" href=#>публікації</a>
+                </li>
+                <li class="modal_input page_modal">
+                    <a class="modal_link " href=#>контакти</a>
+                </li>
+
+            </ul>
         </div>
     </div>
 </body>

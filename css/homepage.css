@@ -162,6 +162,10 @@ body {
   text-decoration: underline;
 }
 
+.mobile_button {
+  position: absolute;
+}
+
 .txt_btn {
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -175,16 +179,8 @@ body {
   margin-bottom: 20px;
 }
 
-.btn_scroll {
-  background-image: url(../components/svg/Ellipse_scrol.svg);
-  width: 42px;
-  height: 42px;
-  padding-top: 305px;
-  background-repeat: no-repeat;
-}
-
-.btn_scroll:hover {
-  fill: #F0145A;
+.btn {
+  margin-top: 305px;
 }
 
 .main_experience {
@@ -235,9 +231,9 @@ body {
 }
 
 .experience_text {
-  width: 581px;
   display: flex;
   flex-direction: column;
+  max-width: 581px;
 }
 
 .experience_title {
@@ -247,7 +243,7 @@ body {
   color: #FFFFFF;
 }
 
-.experience_text {
+.experience_text_item {
   font-family: "Montserrat-Regular";
   font-weight: 400;
   font-size: 19px;
@@ -294,13 +290,11 @@ body {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  color: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
 .service_info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows: repeat(2, 295px);*/
   grid-column-gap: 60px;
   grid-row-gap: 60px;
   padding: 60px 0 30px 0;
@@ -337,26 +331,8 @@ body {
   padding-top: 15px;
 }
 
-/*.line {
-    background: #CACADB;
-    border-radius: 0px 0px 12px 12px;
-    /*width: 1880px;
-    height: 10px;
-    border: none;
-    margin: 0 auto;
-}
-
-.line_one {
-    background: #E7E7F2;
-    border-radius: 0px 0px 12px 12px;
-    /*width: 1840px;
-    height: 10px;
-    border: none;
-    margin: 0 auto;
-}*/
 .team {
   display: flex;
-  /*max-width: 1600px;*/
   background-color: #F5F5FA;
   border-radius: 12px;
   margin: 60px auto 30px auto;
@@ -430,6 +406,10 @@ body {
   border-radius: 50%;
 }
 
+.companies_serv {
+  margin-bottom: 60px;
+}
+
 .companies_item {
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -445,7 +425,6 @@ body {
 
 .compamies_images {
   display: grid;
-  /*max-width: 1720px;*/
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   border-radius: 12px 0px 0px 0px;
@@ -712,6 +691,14 @@ body {
   color: #B3B3BA;
 }
 
+.modal_container {
+  display: none;
+}
+
+.serv_mobile {
+  display: none;
+}
+
 @media (max-width: 1190px) {
   .header-container {
     padding-top: 55px;
@@ -734,6 +721,9 @@ body {
   }
   .main_experience {
     flex-direction: column;
+  }
+  .experience_text {
+    max-width: 100%;
   }
   .experience_list {
     flex-direction: row;
@@ -783,6 +773,12 @@ body {
   .cover3 {
     width: 100%;
   }
+  .modal_container {
+    display: none;
+  }
+  .serv_mobile {
+    display: none;
+  }
 }
 @media (max-width: 1090px) {
   .compamies_images {
@@ -792,20 +788,11 @@ body {
   .articles_column {
     width: 100%;
   }
+  .serv_mobile {
+    display: none;
+  }
 }
 @media (max-width: 725px) {
-  /*.footer_text {
-      flex-direction: column;
-  }
-
-  .footer_contact {
-      position: relative;
-  }
-
-  .hlegal {
-      position: absolute;
-      right: 1px;
-  }*/
   .footer_text {
     flex-direction: column;
   }
@@ -825,18 +812,23 @@ body {
   .hlegal {
     margin: 0 auto;
   }
+  .serv_mobile {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .logo {
     width: 69px;
+    margin: 0;
   }
   .info_header {
-    position: relative;
-    margin-top: -70px;
     justify-content: space-between;
+    padding: 12px;
     background: rgba(245, 245, 250, 0.2);
-    margin-left: 22px;
-    padding: 15px 20px 15px 10px;
+    top: 0;
+  }
+  .info_nav {
+    margin-top: 0;
   }
   .circle {
     display: none;
@@ -855,48 +847,104 @@ body {
     font-weight: 400;
     font-size: 20px;
   }
+  .mobile_button {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: 87%;
+    top: -45px;
+  }
+  .line_button {
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 12%;
+    background-color: #ffffff;
+  }
+  .button_one {
+    top: 22px;
+  }
+  .button_two {
+    top: 16px;
+  }
+  .button_three {
+    top: 10px;
+  }
   .service_info {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .companies_serv {
+    margin-bottom: 0;
   }
   .compamies_images {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
   }
-  /*.info_nav {
-      display: none;
-  }
-
   .log_menu {
-      display: none;
-  }*/
-}
-.modal_container {
-  background-color: #323264;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  display: none;
-}
-
-.active_mod {
-  display: flex;
-}
-
-.modal {
-  width: 359px;
-  background-color: #FFFFFF;
-  padding: 64px 12px 12px 12px;
-  border-radius: 12px 12px 0px 0px;
-  width: 359px;
-  height: 351px;
-}
-
-.text {
-  width: 100%;
-  height: 43px;
-  background: #F5F5FA;
-  border-radius: 12px;
-  border: none;
+    margin-top: 15px;
+  }
+  .logo_mobile {
+    position: relative;
+  }
+  .serv_mobile {
+    display: inline;
+    position: absolute;
+    left: 103px;
+    bottom: 12px;
+    color: #FFFFFF;
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .modal_container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #323264;
+    top: 0;
+    display: none;
+    justify-content: center;
+  }
+  .active_mod {
+    display: flex;
+  }
+  .modal {
+    width: 359px;
+    background: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+    padding: 12px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .clouse {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 12px;
+  }
+  .clouse_btn {
+    cursor: pointer;
+  }
+  .modal_input {
+    width: 100%;
+    background: #F5F5FA;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .modal_link {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #24A3FF;
+    text-decoration: none;
+  }
+  .page_modal {
+    background: #E6E6F0;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
