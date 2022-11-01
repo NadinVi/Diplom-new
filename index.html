@@ -9,60 +9,85 @@
     <link rel="stylesheet" href="css/homepage.css">
     <title>Homepage</title>
 </head>
-
 <body>
     <div class="info_main">
-        <div class="fix_container">
-            <header class="header-container">
-                <div class="log_menu">
-                    <div class="header_logo">
-                        <a class="logo_mobile" href="#">
-                            <img class="logo" src="components/svg/Logo_homepage.svg" alt="Logo">
-                            <span class="serv_mobile">services</span>
+        <header class="header-container">
+            <div class="header__content__mobile">
+                <div class="mobile__lang">
+                    <p class="lang">УК</p>
+                    <p class="lang">РУ</p>
+                    <p class="lang active">EN</p>
+                </div>
+                <div class="point"></div>
+                <p class="address">Kyiv, Mechnikova str, 14/1</p>
+                <div class="point"></div>
+                <p class="phone">0800 211 927</p>
+                <div class="point"></div>
+                <a href="#" class="social_icon">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_65873_2291)">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="#B3B3BA"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_65873_2291">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="fix_container header__container">
+                <div class="logo__container">
+                    <img class="header__logo" src="components/img/Logo.svg" alt="logo">
+                    <p class="mobile__item__text">services</p>
+                </div>
+                <div class="mobile_button">
+                    <span class="line_button button_one"></span>
+                    <span class="line_button button_two"></span>
+                    <span class="line_button button_three"></span>
+                </div>
+                <div class="header__content">
+                    <div class="header__content__contacts">
+                        <p class="lang">УК</p>
+                        <p class="lang">РУ</p>
+                        <p class="lang active">EN</p>
+                        <div class="point"></div>
+                        <p class="address">Kyiv, Mechnikova str, 14/1</p>
+                        <div class="point"></div>
+                        <p class="phone">0800 211 927</p>
+                        <div class="point"></div>
+                        <a href="#" class="social_icon">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65873_2291)">
+                                    <path
+                                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                        fill="#B3B3BA"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_65873_2291">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </a>
                     </div>
-                    <div class="info_nav">
-                        <div class="info_header">
-                            <div class="button_lang">
-                                <button class="btn_lng">УК</button>
-                                <button class="btn_lng">РУ</button>
-                                <button class="btn_lng lng_eng">EN</button>
-                            </div>
-                            <img class="circle" src="components/svg/Dot separator hr.svg" alt="circle">
-                            <a class="adress" href="#">Kyiv, Mechnikova str, 14/1</a>
-                            <img class="circle" src="components/svg/Dot separator hr.svg" alt="circle">
-                            <a class="telefon" href="#">0800 211 927</a>
-                            <img class="circle" src="components/svg/Dot separator hr.svg" alt="circle">
-                            <a href="#" class="social_icon"></a>
-                        </div>
-                        <nav class="menu">
-                            <ul class="menu_list">
-                                <li class="menu_list_item">
-                                    <a class="active active_serv" href="#">about us</a>
-                                </li>
-                                <li class="menu_list_item">
-                                    <a class="active" href="#">services</a>
-                                </li>
-                                <li class="menu_list_item">
-                                    <a class="active" href="#">team</a>
-                                </li>
-                                <li class="menu_list_item">
-                                    <a class="active" href="#">publication</a>
-                                </li>
-                                <li class="menu_list_item">
-                                    <a class="active" href="#">contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="mobile_button">
-                        <span class="line_button button_one"></span>
-                        <span class="line_button button_two"></span>
-                        <span class="line_button button_three"></span>
-                    </div>
+                    <nav class="header__content__nav">
+                        <ul class="nav__list">
+                            <li class="nav__list__item"><a href="">about us</a></li>
+                            <li class="nav__list__item"><a href="">services</a></li>
+                            <li class="nav__list__item"><a href="">team</a></li>
+                            <li class="nav__list__item"><a href="">publications</a></li>
+                            <li class="nav__list__item"><a href="">contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </header>
-            <main class="main">
+            </div>
+        </header>
+        <main class="main">
+            <div class="fix_container">
                 <div class="txt_btn">
                     <h1 class="h1_name">you legal solutions provider</h1>
                     <a class="btn" href="#">
@@ -80,6 +105,8 @@
                         </svg>
                     </a>
                 </div>
+            </div>
+            <div class="fix-conainer__second">
                 <div class="main_experience">
                     <ul class="experience_list">
                         <li class="experience_item">
@@ -95,21 +122,26 @@
                             <a class="link_experience" href="#">Business oriented</a>
                         </li>
                     </ul>
-                    <div class="experience_text">
-                        <h2 class="experience_title">We turn the idea of legal services</h2>
-                        <div class="experience_text_item">Consolidating many years of experience and practice, the
-                            company's
-                            lawyers accompany complex projects and achieve a number of important decisions for the
-                            industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                    <div class="fix-conainer__second second__text">
+                        <div class="experience_text">
+                            <h2 class="experience_title">We turn the idea of legal services</h2>
+                            <div class="experience_text_item">Consolidating many years of experience and practice, the
+                                company's
+                                lawyers accompany complex projects and achieve a number of important decisions for the
+                                industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="services">
+            </div>
+            <div class="services">
+                <div class="fix_container">
                     <div class="services_link">
                         <a class="serv_lnk" href="#">Services
-                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
-                                </svg>                                                              
+                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                            </svg>
                         </a>
                         <h2 class="service_h2">What can we do better than others?
                         </h2>
@@ -169,17 +201,17 @@
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
     </div>
     <div class="fix_container">
         <div class="team">
-            <img class="photo" src="components/img/image_photo.png" alt="photo Oleksanr Oleksandrovskyi">
+            <img class="photo" src="components/img/image1.png" alt="photo Oleksanr Oleksandrovskyi">
             <div class="team_text">
                 <a class="team_lnk" href="#">Команда
                     <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
-                        </svg> 
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                    </svg>
                 </a>
                 <h2 class="team_h2">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
                     допомогу,
@@ -239,7 +271,9 @@
     <div class="publication">
         <div class="fix_container">
             <a class="team_lnk" href="#">Publications
-                <svg class="serv_img"></svg>
+                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2" />
+                </svg>
             </a>
             <h2 class="team_h2">We have something to tell
             </h2>
@@ -287,7 +321,7 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer_container">
+        <div class="fix_container">
             <hr class="footer_line">
             <div class="footer_text">
                 <div class="footer_contact">
@@ -299,8 +333,12 @@
                     </div>
                     <div class="footer_social">
                         <a class="footer_icon" href="#">
-                            <img class="footer_icon_fb" src="components/svg/fb_footer.svg" alt="facebook">
-                            </img>
+                            <svg class="footer_icon_fb" width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                    fill="#24A3FF" />
+                            </svg>
                         </a>
                         <span class="circle_foot">
                         </span>
@@ -316,7 +354,7 @@
             </div>
         </div>
     </footer>
-
+<!---->
     <div class="modal_container">
         <div class="modal">
             <div class="clouse">
@@ -337,7 +375,7 @@
                     <a class="modal_link" href=#>команда</a>
                 </li>
                 <li class="modal_input">
-                    <a class="modal_link" href=#>публікації</a>
+                    <a class="modal_link modal_link__active" href=#>публікації</a>
                 </li>
                 <li class="modal_input page_modal">
                     <a class="modal_link " href=#>контакти</a>
@@ -347,5 +385,4 @@
         </div>
     </div>
 </body>
-
 </html>
